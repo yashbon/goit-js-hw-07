@@ -1,7 +1,7 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-// console.log(galleryItems);
+console.log(galleryItems);
 
 // My code
 let urlImage = '';
@@ -25,9 +25,8 @@ function selectPicture(event) {
         return;
     }
 
-    urlImage = event.target.dataset.source;
     const instance = basicLightbox.create(`
-        <img src="${urlImage}">
+        <img src="${event.target.dataset.source}">
     `);
 
     instance.show(() => console.log('lightbox now visible'));
@@ -39,4 +38,3 @@ function selectPicture(event) {
         }
     }
 }
-
