@@ -15,7 +15,7 @@ const markup = galleryItems.map(
 ).join('');
 galleryList.insertAdjacentHTML('afterbegin', markup);
 
-new SimpleLightbox('.gallery__item .gallery__link', {
+let lightbox = new SimpleLightbox('.gallery__item .gallery__link', {
     /* options */
     captionsData: 'alt',
     captionDelay: 250,
