@@ -4,7 +4,7 @@ console.log(galleryItems);
 
 // My code
 const galleryList = document.querySelector('.gallery');
-let urlImage = '';
+
 const markup = galleryItems.map(
     ({ description, preview, original }) =>
         `<li class="gallery__item">
